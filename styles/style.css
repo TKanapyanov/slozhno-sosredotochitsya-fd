@@ -256,6 +256,7 @@
   .content-section_type_gallery {
     gap: 20px;
   }
+
   .content-section_type_advices .content-section__title {
     grid-row: 1 / span 2;
   }
@@ -305,10 +306,6 @@
     --header-min-height: 768px;
   }
 
-  .header__theme-menu-list {
-    grid-template-columns: repeat(3, auto);
-  }
-
   .header__subtitle {
     inline-size: 50%;
     margin-block-end: 114px;
@@ -324,9 +321,6 @@
 
   .content-section_type_factors .content-section__cards {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .content-section_type_factors .content-section__cards {
     align-items: start;
   }
 }

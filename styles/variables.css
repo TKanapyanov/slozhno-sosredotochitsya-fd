@@ -2,8 +2,7 @@
   --bg-color: #000028;
   --bg-image: url("../images/cover-image-dark.png");
   --text-color: #f1b2ce;
-  --accent-color: #DB00FF;
-
+  --accent-color: #db00ff;
   --main-font: "IBM Plex mono", monospace;
   --header-padding: 10px;
   --header-min-height: 668px;
@@ -12,7 +11,7 @@
   --header-padding-top: 75px;
   --decor-color: #ff0070;
   --title-decor-bg: var(--decor-color);
-  --title-decor-color: #000028;  
+  --title-decor-color: #000028;
   --decor-offset: 10px;
   --decor-corner-size: 25px;
   --decor-corner-line: 1px;
