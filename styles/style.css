@@ -241,6 +241,7 @@
 
   .content-section_type_gallery {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .content-section__gallery-title {
@@ -251,10 +252,6 @@
 
   .footer__title {
     text-shadow: 2px 2px 0 var(--footer-shadow-color);
-  }
-
-  .content-section_type_gallery {
-    gap: 20px;
   }
 
   .content-section_type_advices .content-section__title {
