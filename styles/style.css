@@ -16,7 +16,6 @@
   min-block-size: var(--header-min-height);
   padding: var(--header-padding-top) var(--header-padding) var(--header-padding)
     var(--header-padding);
-  block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -197,7 +196,6 @@
   min-block-size: var(--footer-min-height);
   padding: var(--header-padding);
   margin-block-start: 42px;
-  block-size: 100vh;
 }
 
 .footer__title {
@@ -208,6 +206,11 @@
 }
 
 @media (width >= 768px) {
+  .header,
+  .footer {
+    block-size: 100vh;
+  }
+
   .header__title {
     margin-inline-start: calc(var(--header-padding) * -1);
   }
