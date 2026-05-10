@@ -14,22 +14,3 @@
 :root.theme-dark .header__rec {
   display: block;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #000028;
-    --bg-image: url("../images/cover-image-dark.png");
-    --text-color: #f1b2ce;
-    --accent-color: #db00ff;
-    --decor-color: #ff0070;
-    --title-decor-bg: var(--decor-color);
-    --title-decor-color: #000028;
-    --title-shadow-color: var(--decor-color);
-    --button-hover-border-color: rgba(255, 0, 112, 0.4);
-    --footer-shadow-color: #ff0070;
-  }
-
-  .header__rec {
-    display: block;
-  }
-}

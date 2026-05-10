@@ -1,5 +1,4 @@
 .page {
-  overflow-x: hidden;
   color: var(--text-color);
   font-family: var(--main-font);
   background-color: var(--bg-color);
@@ -17,6 +16,7 @@
   min-block-size: var(--header-min-height);
   padding: var(--header-padding-top) var(--header-padding) var(--header-padding)
     var(--header-padding);
+  block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -127,7 +127,6 @@
 }
 
 .main {
-  background-color: var(--bg-color);
   padding-block-start: 40px;
   padding-inline: var(--header-padding);
 }
@@ -151,9 +150,10 @@
 
 .content-section__title {
   color: var(--decor-color);
+  font-size: 18px;
+  line-height: 23.4px;
 }
 
-.content-section__title,
 .content-section__card-title {
   font-size: 18px;
   line-height: 23.4px;
@@ -161,7 +161,7 @@
 
 .content-section__link {
   color: inherit;
-  text-shadow: 2px 2px 0 var(--decor-color);
+  text-shadow: 2px 2px 0 var(--link-shadow-color);
   text-decoration: none;
 }
 
@@ -196,8 +196,8 @@
   place-items: center;
   min-block-size: var(--footer-min-height);
   padding: var(--header-padding);
-  background-color: var(--bg-color);
   margin-block-start: 42px;
+  block-size: 100vh;
 }
 
 .footer__title {
@@ -208,13 +208,6 @@
 }
 
 @media (width >= 768px) {
-  :root {
-    --header-padding: 20px;
-    --header-padding-top: 192px;
-    --decor-offset: 20px;
-    --header-min-height: 1024px;
-    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
   .header__title {
     margin-inline-start: calc(var(--header-padding) * -1);
   }
@@ -226,7 +219,6 @@
   }
 
   .main {
-    padding-inline: var(--header-padding);
     padding-block-start: 60px;
   }
 
@@ -249,8 +241,6 @@
 
   .content-section__gallery-title {
     grid-column: 1 / -1;
-    font-size: 18px;
-    line-height: 23.4px;
   }
 
   .content-section_type_advices .content-section__title {
@@ -262,7 +252,6 @@
   }
 
   .content-section__image {
-    inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
   }
@@ -301,20 +290,14 @@
 
   .footer {
     margin-block-start: 60px;
-    min-block-size: 100vh;
   }
 }
 
 @media (width >= 1024px) {
-  :root {
-    --header-padding-top: 20px;
-    --header-min-height: 768px;
-  }
   .header__title {
     transform: translateY(80px);
   }
   .header__subtitle {
-    inline-size: 50%;
     margin-block-end: 114px;
   }
   .header__theme-menu {
@@ -322,8 +305,7 @@
   }
 
   .header__theme-menu-list {
-    display: flex;
-    gap: 10px;
+    grid-template-columns: repeat(3, auto);
   }
 
   .content-section {
