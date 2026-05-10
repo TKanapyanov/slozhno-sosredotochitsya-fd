@@ -2,11 +2,6 @@
   color: var(--text-color);
   font-family: var(--main-font);
   background-color: var(--bg-color);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .header {
@@ -16,6 +11,11 @@
   min-block-size: var(--header-min-height);
   padding: var(--header-padding-top) var(--header-padding) var(--header-padding)
     var(--header-padding);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header__theme-menu {
