@@ -129,6 +129,7 @@
   padding-block-start: 40px;
   padding-inline: var(--header-padding);
   background-color: var(--bg-color);
+  padding-block-end: 42px;
 }
 
 .content-section {
@@ -196,7 +197,6 @@
   place-items: center;
   min-block-size: var(--footer-min-height);
   padding: var(--header-padding);
-  margin-block-start: 42px;
   background-color: var(--bg-color);
 }
 
@@ -225,6 +225,7 @@
 
   .main {
     padding-block-start: 60px;
+    padding-block-end: 60px;
   }
 
   .content-section {
@@ -291,10 +292,6 @@
   .content-section_type_factors .content-section__cards {
     grid-column: 1;
     grid-template-columns: 1fr;
-  }
-
-  .footer {
-    margin-block-start: 60px;
   }
 }
 
