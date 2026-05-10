@@ -83,6 +83,7 @@
   font-size: var(--header-title-size);
   line-height: var(--header-title-line-height);
   text-shadow: 4px 4px 0 var(--title-shadow-color);
+  margin-inline-start: calc(var(--header-padding) * -1);
 }
 
 .header__subtitle {
